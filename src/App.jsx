@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState("");
   const handleClick = async () => {
     const res = prompt("Enter Color Name");
-    let result = await axios.get(`https://backend-1-viie.onrender.com/${res}`);
+    let result = await axios.get(`https://backend-1-viie.onrender.com/${res}`)
     setData(result.data);
     console.log(response.data);
   }
